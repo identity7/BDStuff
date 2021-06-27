@@ -1,6 +1,9 @@
 [aria-label='Inbox'], [aria-label='Help']{ /*Inbox and Help button*/
     display: none;
 }
+[aria-label='Send a gift']{ /*Send a gift button*/
+    display: none;
+}
 .unread-2lAfLh, .item-2hkk8m:not([style*="height: 40px;"]){ /*Removes the unread notifications next to the servers/channel list*/
     display: none;
 }
