@@ -1,3 +1,0 @@
-.floating-window-titlebar, .floating-window #bd-editor-controls{ /*Makes the title bar and options of the Editor opaque*/
-    background: rgba(0,0,0,1);
-}
