@@ -1,1 +1,59 @@
+[aria-label='Inbox'], [aria-label='Help']{ /*Inbox and Help button*/
+    display: none;
+}
+.unread-2lAfLh, .item-2hkk8m:not([style*="height: 40px;"]){ /*Removes the unread notifications next to the servers/channel list*/
+    display: none;
+}
+#app-mount .containerDefault--pIXnN .modeUnread-1qO3K1 .content-1x5b-n{ /*Makes the unread channels more visible*/
+    background: linear-gradient(140deg, rgb(99, 95, 95), transparent);
+}
+.unreadMentionsIndicatorBottom-2mDYbI, .unreadMentionsIndicatorTop-2-tcdU{ /*Removes the unread messages notification from the server list*/
+    display: none;
+}
+#app-mount .newMessagesBar-265mhP{ /*Removes the new messages bar from the chat*/
+    display: none;
+}
+.repliedMessage-VokQwo:before{ /*Makes the line linking the avatar and reply darker*/
+    border-color: rgb(104, 101, 101);
+}
+.scrollableContainer-2NUZem{ /*Makes the message container less transparent*/
+    background: rgba(0, 0, 0, .3);
+}
+.unreadTop-3rAB3r, .unreadBottom-1_LF_w{ /*Removes the unread messages notification in the channel list*/
+    display: none;
+}
+[aria-controls='ADD_FRIEND-tab']{ /*Colors the Add Friend button*/
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+.scroller-3BxosC{ /*Makes the right click menu and status picker darker*/
+    background: rgba(0, 0, 0, .6);
+}
+.animatedContainer-1NSq4T, .content-3YMskv [style="height: 84px;"], .bannerImage-3KhIJ6 { /* Get rid of banners on servers */
+    display: none;
+}
+#private-channels [href="/discovery"]{ /*Removes Stage Discovery tab*/
+    display: none;
+}
+.replying-1x3H0T:before{ /*Makes the bar to the left of a reply the primary gradient*/
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+.colorLink-2vG20E { /* Changes the color of the @ ON for replying */
+    color: transparent;
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgb(109, 109, 109));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: none !important;
+}
+.reaction-1hd86g.reactionMe-wv5HKu { /* Makes reactions' border the main color */
+    border-color: rgba(215, 15, 0, 1);
+}
+
+
+
+
+
+
+
+
+
 
