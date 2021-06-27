@@ -1,3 +1,12 @@
+.peopleListItem-2nzedh{ /*Removes the border between friends in the list*/
+    border-top: 0px;
+}
+.scroller-2ZPeAD{ /*Removes the border from the activity list in the friends list*/
+    border-left: 0px;
+}
+.channel-2QD9_O[href='/store']{ /*Removes the Nitro tab from the home screen*/
+    display: none;
+}
 [aria-label='Inbox'], [aria-label='Help']{ /*Inbox and Help button*/
     display: none;
 }
