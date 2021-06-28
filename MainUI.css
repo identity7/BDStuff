@@ -59,7 +59,28 @@
 .reaction-1hd86g.reactionMe-wv5HKu { /* Makes reactions' border the main color */
     border-color: rgba(215, 15, 0, 1);
 }
-
+@keyframes channelSelect{
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+.wrapper-2jXpOf.modeSelected-346R90>div{
+    background: transparent;
+}
+.wrapper-2jXpOf.modeSelected-346R90>div::before{
+    -webkit-animation: channelSelect 1s ease-out;
+    -webkit-animation-fill-mode: both;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+    border-radius: 4px;
+}
+#app-mount .containerDefault--pIXnN.selected-3LIHYU .content-1x5b-n{
+    background: transparent !important;
+}
 
 
 
