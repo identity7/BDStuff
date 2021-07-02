@@ -1,3 +1,3 @@
 # identity7.github.io
-my bd fuckery
-eat my ass :Kreygasm:
+my bd stuff
+![alt text](https://i.imgur.com/h7sGYtG.jpg)
