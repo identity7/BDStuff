@@ -72,7 +72,9 @@
     -webkit-background-clip: text;
     text-shadow: 0px 0px 2px rgba(128, 128, 128, 0.775);
 }
-
+#app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after{ /*Removes the mobile icon since I have PlatformIndicators*/
+    display: none;
+}
 
 
 
