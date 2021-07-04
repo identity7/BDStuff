@@ -36,3 +36,26 @@
     visibility: visible !important;
     font-size: 17px;
 }
+
+
+
+
+.theme-dark .app-2rEoOp .layer-3QrUeG:first-of-type *::before, 
+.theme-dark .app-2rEoOp .layer-3QrUeG:first-of-type *::after, 
+.theme-dark .app-2rEoOp .layer-3QrUeG:first-of-type * {
+    visibility: hidden !important;
+}
+.theme-dark .app-2rEoOp .layer-3QrUeG:first-of-type {background-color: #23283d !important}
+.theme-dark .app-2rEoOp .container-3baos1 > .noWrap-3jynv6 > .button-14-BFJ:nth-child(3) {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+.theme-dark .app-2rEoOp .container-3baos1 > .noWrap-3jynv6 > .button-14-BFJ:nth-child(3)::before {
+    position: absolute;
+    content: "🔒";
+    visibility: visible !important;
+    font-size: 17px;
+}
