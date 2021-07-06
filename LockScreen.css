@@ -1,21 +1,5 @@
-                                              /*-----Changes the text in settings to reflect the snippet-----*/
-                                            /*-----Credit to sheep#2428(429303151598895106) in Comfy camp-----*/
-.marginTop40-i-78cZ > div[role*="radiogroup"] > .item-26Dhrx:nth-child(2) > .radioBar-bMNUI- > .info-3LOr12 > .title-3BE6m5::before {
-    content: "🔒 Lock Discord";
-    visibility: visible;
-}
-.marginTop40-i-78cZ > div[role*="radiogroup"] > .item-26Dhrx:nth-child(2) > .radioBar-bMNUI- > .info-3LOr12 > .title-3BE6m5 {
-    visibility: hidden;
-}
 
-
-
-
-
-
-
-
-                                                      /*-----Locks Screen when theme is toggled-----*/
+                                                       /*-----Locks Screen when theme is toggled-----*/
                                            /*-----Credit to _david_#0218(369189076437565451) in Comfy camp-----*/
 .theme-light .app-2rEoOp .layer-3QrUeG:first-of-type *::before, 
 .theme-light .app-2rEoOp .layer-3QrUeG:first-of-type *::after, 
