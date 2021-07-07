@@ -13,3 +13,6 @@
     content: "Read All";
     font-size: 12px;
 }
+#MemberCount{ /*Makes the member count header transparent*/
+    background: rgba(0, 0, 0, 0) !important;
+}
