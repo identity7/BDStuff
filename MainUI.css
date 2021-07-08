@@ -75,7 +75,47 @@
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after{ /*Removes the mobile icon since I have PlatformIndicators*/
     display: none;
 }
-
+/*Channel Selection animation*/
+@keyframes channelSelect{
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+.wrapper-2jXpOf.modeSelected-346R90>div{
+    background: transparent;
+}
+.wrapper-2jXpOf.modeSelected-346R90>div::before{
+    -webkit-animation: channelSelect 1.5s ease-out;
+    -webkit-animation-fill-mode: both;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+    border-radius: 4px;
+}
+#app-mount .containerDefault--pIXnN.selected-3LIHYU .content-1x5b-n{
+    background: transparent !important;
+}
+/*Avatar hover animation*/
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+.avatar-1BDn8e.clickable-1bVtEA { 
+    filter: drop-shadow(0 0 6px);
+    color: white;
+}
+.avatar-1BDn8e:hover.clickable-1bVtEA:hover {
+    filter: drop-shadow(0 0 10px);
+    color: white;
+    animation: pulse-animation 1.5s infinite;
+}
 
 
 
