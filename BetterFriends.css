@@ -1,0 +1,25 @@
+:root {
+/* Active Now Tab Height */
+  --active-now-height: 35vh;
+}
+/* Online count */
+.peopleList-3c4jOR .title-30qZAO { 
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px !important;
+  font-family: "Quicksand";
+}
+/*Makes the Active Now tab a row under the list*/
+.tabBody-3YRQ8W, .pageContent-1xgXch, .stageSection-3mAD8V{
+  display: flex;
+  flex-flow: column nowrap;
+}
+/*Make Active Now Resizeable*/
+.nowPlayingColumn-2sl4cE, .nowPlayingSidebar-2OFn0o{
+  flex: unset; max-width: unset;
+  overflow: hidden;
+  height: var(--active-now-height); 
+  min-height: var(--active-now-height);
+  max-height: var(--active-now-height);
+}
