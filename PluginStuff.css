@@ -16,3 +16,6 @@
 #MemberCount{ /*Makes the member count header transparent*/
     background: rgba(0, 0, 0, 0) !important;
 }
+.popout-2iWAc-{ /*Makes the PanelPopout popout less transparent*/
+    background: rgba(0, 0, 0, .3);
+}
