@@ -1,39 +1,3 @@
-
-/* DEFINE MAIN VARIABLES */
-
-.theme-dark {
-    --text-normal: rgb(255, 255, 255);
-    --header-primary: var(--text-normal);
-    --interactive-normal: var(--text-normal);
-    --interactive-hover: var(--text-normal);
-    --interactive-active: var(--text-normal);
-    --header-secondary: rgb(204, 204, 204);
-    --background-modifier-accent: rgb(187, 187, 187);
-    --text-muted: rgb(187, 187, 187);
-    --text-link: rgb(72, 222, 233);
-    --text-positive: rgb(98, 185, 67);
-    --text-positive-opacity: rgba(98, 255, 67, var(--opacity));
-    --interactive-muted: rgb(70, 70, 70);
-    --guild-header-text-shadow: none;
-    --normal-background: rgba(var(--background-color), var(--opacity));
-    --background-accent: var(--normal-background);
-    --background-primary: var(--normal-background);
-    --background-secondary: var(--normal-background);
-    --background-secondary-alt: var(--normal-background);
-    --background-tertiary: var(--normal-background);
-    --background-floating: var(--normal-background);
-    --scrollbar-auto-thumb: var(--normal-background);
-    --light-background: rgba(var(--background-color), var(--light-opacity));
-    --background-mentioned: var(--light-background);
-    --scrollbar-auto-track: var(--light-background);
-    --dark-background: rgba(var(--background-color), var(--dark-opacity));
-    --notification-color: 250, 100, 150;
-    --notification: rgb(var(--notification-color));
-    --notification-opacity: rgba(var(--notification-color), var(--dark-opacity));
-    --rainbow-gradient-width: 1px;
-    --rainbow-gradient: linear-gradient(135deg, rgba(255, 0, 0, 1) 0%, rgba(255, 162, 0, 1) 20%, rgba(255, 248, 0, 1) 40%, rgba(0, 255, 64, 1) 60%, rgba(0, 31, 255, 1) 80%, rgba(98, 0, 255, 1) 100%);
-}
-
 /* TITLE BAR */
 
 .titleBar-AC4pGV .wordmark-2iDDfm::after {
