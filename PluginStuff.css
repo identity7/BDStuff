@@ -22,3 +22,6 @@
 .qwert-toast-text{ /*Makes the text in IAN wrap*/
     white-space: normal !important;
 }
+.qwert-toast{ /*Makes the IAN toast taller*/
+    min-height: 75px !important;
+}
