@@ -19,3 +19,6 @@
 .popout-2iWAc-{ /*Makes the PanelPopout popout less transparent*/
     background: rgba(0, 0, 0, .3);
 }
+.qwert-toast-text{ /*Makes the text in IAN wrap*/
+    white-space: normal !important;
+}
