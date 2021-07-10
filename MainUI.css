@@ -7,6 +7,9 @@
 .channel-2QD9_O[href='/store']{ /*Removes the Nitro tab from the home screen*/
     display: none;
 }
+.stickerButton-3OEgwj{ /*Removes the sticker button*/
+    display: none;
+}
 [aria-label='Inbox'], [aria-label='Help']{ /*Inbox and Help button*/
     display: none;
 }
