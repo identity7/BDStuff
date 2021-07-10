@@ -125,7 +125,9 @@
 .theme-dark .categoryFadeBlurple-1j72_A, .theme-dark .categoryFadeBlurple-1j72_A:hover{ /*Changes the native color in the gif picker*/
     background: linear-gradient(140deg, rgba(215, 15, 0, .2), rgba(0, 0, 0, .2)) !important;
 }
-
+.theme-dark .focused-1En8bG:after, .theme-dark .result-3w1ZcL:hover:after{ /*Removes the blurple border aroundthe gifs in the picker*/
+  box-shadow: unset;
+}
 
 
 
