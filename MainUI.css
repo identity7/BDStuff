@@ -119,7 +119,12 @@
     color: white;
     animation: pulse-animation 1.5s infinite;
 }
-
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV{ /*Makes the button in the userpopout darker*/
+    background: rgba(0, 0, 0, .3);
+}
+.theme-dark .categoryFadeBlurple-1j72_A, .theme-dark .categoryFadeBlurple-1j72_A:hover{ /*Changes the native color in the gif picker*/
+    background: linear-gradient(140deg, rgba(215, 15, 0, .2), rgba(0, 0, 0, .2)) !important;
+}
 
 
 
