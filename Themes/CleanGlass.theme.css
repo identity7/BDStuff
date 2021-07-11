@@ -6,3 +6,8 @@
 */
 
 @import url(https://identity7.github.io/BDStuff/Themes/CleanGlass.css);
+
+
+:root{
+  --background-image: url(https://cdn.discordapp.com/attachments/854499134873927740/863624046050279464/wallhaven-wq6qo7.jpg);
+}
