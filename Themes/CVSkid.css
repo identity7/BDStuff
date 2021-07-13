@@ -1164,28 +1164,6 @@ textarea,
 .panels-j1Uci_ > :first-child {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, calc(var(--background-shading) * .3));
 }
-
-.container-3baos1 > .flex-1O1GKY,
-.container-1giJp5 > .flex-1O1GKY {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
-}
-.container-3baos1 > .flex-1O1GKY > :nth-child(n+2),
-.container-1giJp5 > .flex-1O1GKY > :nth-child(n+2) {
-  position: relative;
-  margin-left: -1px;
-}
-.container-3baos1 > .flex-1O1GKY > :nth-child(n+2):before,
-.container-1giJp5 > .flex-1O1GKY > :nth-child(n+2):before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  bottom: 2px;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .button-14-BFJ {
   width: 32px;
   height: 32px;
