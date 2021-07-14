@@ -1,0 +1,38 @@
+.container-3auIfb[style*='background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);']{ /*Changes the default switches enabled color*/
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+.container-3auIfb[style*='background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);'] svg path { /* Removes the checkmark on enabled default discord switches */
+    display: none;
+}
+.container-3auIfb[style*='background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);'] svg path { /* Removes the x mark on disabled default discord switches */
+    display: none;
+}
+#app-mount .lookOutlined-3sRXeN.colorBrand-3pXr91{
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+.theme-dark .addGamePopout-2RY8Ju{ /*Makes the Add game popout darker and transparent*/
+    background: rgba(0, 0, 0, .85);
+}
+.bd-switch input:checked+.bd-switch-body{ /*Makes enabled BD switches the gradient*/
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+[class='bd-switch-symbol']{ /*Removes the checks and x's from BD switches*/
+    display: none;
+}
+.bd-controls>.bd-addon-button:not(:last-of-type){ /*Makes the plugin/theme settings buttons transparent, except for the delete*/
+    background: transparent;
+}
+.bd-controls>.bd-addon-button:last-of-type{ /*Rounds the delete button out in plugin/theme settings*/
+    border-radius: 3px;
+}
+.app-2rEoOp button[class='bd-button bd-button-title'], .bd-addon-views .bd-view-button.selected{
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+}
+.bd-link[class='bd-link bd-link-website']{ /*Changes the dev links in plugins and themes*/
+    color: transparent;
+    background: linear-gradient(140deg, rgba(215, 15, 0, 1), rgba(0, 0, 0, 1));
+    text-shadow: 0px 0px .5px rgba(250, 250, 250, 0.35);
+    font-size: 14px;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
