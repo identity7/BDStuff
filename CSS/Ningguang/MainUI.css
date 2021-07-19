@@ -55,3 +55,9 @@
 #app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after{ /*Mobile icon*/
     display: none;
 }
+#app-mount .guilds-1SWlCJ [class*=circleIconButton]:not([aria-label='Add a Server']){ /*Circle icons in server list*/
+    display: none;
+}
+.circleIcon-1-oi1i{ /*Join server icon*/
+    color: #b82d41;
+}
