@@ -1,1 +1,10 @@
-
+.floating-window #bd-editor-controls, .floating-window-titlebar{ /*Title bar and tool bar*/
+    background: #201e1e;
+}
+.markdown-hover{ /*MDN popup*/
+    display: none;
+}
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span{ /*Check box*/
+    background: var(--gradient);
+    border-color: #000000;
+}
