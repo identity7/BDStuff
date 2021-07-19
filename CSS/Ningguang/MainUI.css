@@ -11,7 +11,9 @@
 #app-mount .newMessagesBar-265mhP{ /*New messages bar from the chat*/
     display: none;
 }
-
+#app-mount .containerDefault--pIXnN .modeUnread-1qO3K1 .content-1x5b-n{ /*Unread channel */
+    background: linear-gradient(90deg, #4a4e53b2 40%, #4a4e535d 80%, transparent);
+}
 
 
 
