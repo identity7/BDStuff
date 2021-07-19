@@ -1,1 +1,48 @@
+/*Unread notifications*/
+.unreadMentionsIndicatorBottom-2mDYbI, .unreadMentionsIndicatorTop-2-tcdU{ /*Unread messages in server*/
+    display: none;
+}
+.unread-2lAfLh, .item-2hkk8m:not([style*='height: 40px;']){ /*Unread message pills*/
+    display: none;
+}
+.unreadTop-3rAB3r, .unreadBottom-1_LF_w{ /*Unread messages notification in the channel list*/
+    display: none;
+}
+#app-mount .newMessagesBar-265mhP{ /*New messages bar from the chat*/
+    display: none;
+}
 
+
+
+/*Home*/
+.channel-2QD9_O[href='/store']{ /*Nitro tab*/
+    display: none;
+}
+#private-channels [href="/discovery"]{ /*Stage Discovery tab*/
+    display: none;
+}
+
+
+
+/*Chat*/
+.stickerButton-3OEgwj{ /*Sticker button*/
+    display: none;
+}
+[aria-label='Inbox'], [aria-label='Help']{ /*Inbox and Help button*/
+    display: none;
+}
+[aria-label='Send a gift']{ /*Send a gift button*/
+    display: none;
+}
+.scrollableContainer-2NUZem{ /*Message container*/
+    background: rgba(0, 0, 0, .4);
+}
+.animatedContainer-1NSq4T, .content-3YMskv [style="height: 84px;"], .bannerImage-3KhIJ6{ /*Server banners*/
+    display: none;
+}
+.replying-1x3H0T:before{ /*Bar to the left of a reply*/
+    background: var(--gradient);
+}
+#app-mount .wrapper-3t9DeA foreignObject[mask*=mobile]:after{ /*Mobile icon*/
+    display: none;
+}
