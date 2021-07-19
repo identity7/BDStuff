@@ -27,6 +27,9 @@
 [aria-controls='ADD_FRIEND-tab']{ /*Add Friend button*/
     background: var(--gradient);
 }
+[aria-label='Send a wave']{ /*Send a wave button in DMs*/
+    display: none;
+}
 
 
 
