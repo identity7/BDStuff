@@ -24,6 +24,9 @@
 #private-channels [href="/discovery"]{ /*Stage Discovery tab*/
     display: none;
 }
+[aria-controls='ADD_FRIEND-tab']{ /*Add Friend button*/
+    background: var(--gradient);
+}
 
 
 
