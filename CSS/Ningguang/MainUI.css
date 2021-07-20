@@ -78,3 +78,9 @@ span.roleColor-rz2vM0::after{ /*Role color in member list*/
 .member-3-YXUe{ /*Member list*/
   margin-bottom: 8px;
 }
+.children-3rEycc [aria-label='Create Invite'] svg{ /*Invite on channel*/
+    display: none;
+}
+.colorBrand-ROmMP1{ /*Invite on channel menu*/
+    display: none;
+}
