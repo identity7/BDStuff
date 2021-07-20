@@ -1,1 +1,27 @@
-
+.container-3auIfb[style*='background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);']{ /*Default switches enabled*/
+    background: var(--gradient);
+}
+.container-3auIfb[style*='background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);'] svg path { /*Checkmark on enabled default discord switches*/
+    display: none;
+}
+.container-3auIfb[style*='background-color: hsl(218, calc(var(--saturation-factor, 1) * 4.6%), 46.9%);'] svg path { /*x mark on disabled default discord switches*/
+    display: none;
+}
+.bd-switch input:checked+.bd-switch-body{ /*Enabled BD switches*/
+    background: var(--gradient);
+}
+[class='bd-switch-symbol']{ /*Checks and x's from BD switches*/
+    display: none;
+}
+.bd-button-title{ /*Open plugins/themes folders*/
+    background: var(--gradient);
+}
+.bd-controls>.bd-addon-button:not(:last-of-type){ /*Plugin/theme settings buttons transparent, except for the delete*/
+    background: transparent;
+}
+.bd-controls>.bd-addon-button:last-of-type{ /*Rounds the delete button out in plugin/theme settings*/
+    border-radius: 3px;
+}
+.app-2rEoOp button[class='bd-button bd-button-title'], .bd-addon-views .bd-view-button.selected{
+    background: var(--gradient);
+}
