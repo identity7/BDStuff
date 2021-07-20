@@ -61,3 +61,6 @@
 .circleIcon-1-oi1i{ /*Join server icon*/
     color: #b82d41;
 }
+html:root{ /*Font*/
+    --font-display: var(--font);
+}
