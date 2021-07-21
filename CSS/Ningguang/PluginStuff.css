@@ -1,1 +1,24 @@
-
+.popout-VcNcHB{ /*Dropdown background of the Google Translate plugin darker*/
+    background: rgba(0, 0, 0, .9);
+}
+.button-Jt-tIg{ /*Makes the Read All button the primary gradient, and changes its' text*/
+    background: var(--gradient);
+    border-radius: 3px !important;
+    font-size: 0px;
+}
+.button-Jt-tIg:hover{ /*Makes the Read All button transparent on hover*/
+    background: transparent !important;
+}
+.button-Jt-tIg::before{ /* Capitalizes "Read All" */
+    content: "Read All";
+    font-size: 12px;
+}
+#MemberCount{ /*Makes the member count header transparent*/
+    background: rgba(0, 0, 0, 0) !important;
+}
+.qwert-toast-text{ /*Makes the text in IAN wrap*/
+    white-space: normal !important;
+}
+.qwert-toast{ /*Makes the IAN toast taller*/
+    min-height: 75px !important;
+}
