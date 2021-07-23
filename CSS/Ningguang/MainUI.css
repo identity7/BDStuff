@@ -64,7 +64,7 @@
 html:root{ /*Font*/
     --font-display: var(--font);
 }
-span.roleColor-rz2vM0::after{ /*Role color in member list*/
+span.roleColor-rz2vM0::before{ /*Role color in member list*/
     content: "";
     background: currentColor;
     width: 100%;
