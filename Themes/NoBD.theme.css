@@ -1,1 +1,36 @@
+/**
+* @Name NoBD
+* @Description A troll theme removes everything BD related and--hopefully--replaces the currently enabled theme with a modified version of DiscordRecolor
+* @Version 1
+* @Author identity7#8008. DiscordRecolor is made by DevilBro#4401
+*/
 
+@import url(https://identity7.github.io/BDStuff/Themes/src/NoBD.css);
+/*Yes I skidded BR because it's the closest theme to vanilla discord there is*/
+
+:root {
+	--accentcolor:			163,47,194;		/*	blurple		-	default:	88,101,242		*/
+	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
+	--linkcolor:			190,60,220;		/*	link		-	default:	0,176,244		*/
+}
+.socialLinks-3jqNFy [class*='bd-social-link']{ /*BD twitter link in settings*/
+    display: none;
+}
+.info-1VyQPT [class='colorMuted-HdFt4q size12-3cLvbJ']{ /*BD version in settings*/
+    display: none;
+}
+#app-mount .info-1VyQPT .colorMuted-HdFt4q:first-child:before{ /*Theme name and version*/
+    display: none;
+}
+.info-1VyQPT .colorMuted-HdFt4q:last-child:after{ /*Theme name and version v2: Electric Boogaloo*/
+    display: none;
+}
+.submenuContainer-2gbm7M [id='user-settings-cog-BetterDiscord'], .separator-2I32lJ{ /*BD settings in context menu*/
+    display: none;
+}
+.submenuContainer-2gbm7M [id='user-settings-cog-Experiments']{ /*Experiments in context menu*/
+    display: none;
+}
+.bd-sidebar-header, [aria-controls='Settings-tab'], [aria-controls='customcss-tab'], [aria-controls='plugins-tab'], [aria-controls='themes-tab'], [aria-controls='pluginrepo-tab'], [aria-controls='themerepo-tab']{ /*BD tabs*/
+    display: none !important;
+}
