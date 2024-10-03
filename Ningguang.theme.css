@@ -1,0 +1,182 @@
+/**
+ * @name Ningguang
+ * @author Gibbu#1211. Edits by identity7#8448
+ * @version 2.0.0
+ * @description Frosted Glass by Gibbu. Dark mode is required. Edits by identity7#8008. Some of the stuff here will only work for my pc. Might need changing if someone else uses this theme and my css with it.
+*/
+
+@import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css); /*Base*/
+@import url(https://monstrousdev.github.io/themes/addons/user-tags.css); /*USRBG*/
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/UsrBgs.css"); /*USRBG*/
+@import url(https://nyri4.github.io/Discolored/main.css); /*Discolored*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css); /*SettingsIcons*/
+@import url(https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css); /*ChannelIcons*/
+
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css); /*Discord font*/
+@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap); /*Quicksand font*/
+
+:root {
+  /* Background image variables */
+  --background-image: url(https://cdn.discordapp.com/attachments/854499134873927740/865992949337554954/Ningguang.jpg);
+  --background-image-blur: 5px;
+  --background-image-size: cover;
+  --background-image-position: center;
+
+  /* Popout & Modal variables */
+  --popout-modal-image: var(--background-image);
+  --popout-modal-blur: 2px;
+  --popout-modal-size: cover;
+  --popout-modal-position: center;
+
+  /* Home image variables */
+  --home-button-image: url('https://discordstyles.github.io/FrostedGlass/assets/discord.svg');
+  --home-button-size: cover;
+  --home-button-position: center;
+
+  /* Brightness variables | 0 - 1 (decimals allowed) */
+  --serverlist-brightness: 0.55;
+  --left-brightness: 0.55;
+  --middle-brightness: 0.4;
+  --right-brightness: 0.1;
+  --popout-modal-brightness: 0.75;
+
+  /* Gradient variables */
+  --gradient-primary: 27,29,38;
+  --gradient-secondary: 161,37,53;
+  --gradient-direction: 320deg;
+
+  /* Gradient variables v2: Electric Boogaloo*/
+  --gradient-10: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.1), rgba(var(--gradient-secondary), 0.1));
+  --gradient-30: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.3), rgba(var(--gradient-secondary), 0.3));
+  --gradient-40: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.4), rgba(var(--gradient-secondary), 0.4));
+  --gradient-60: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.6), rgba(var(--gradient-secondary), 0.6));
+  --gradient-70: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.7), rgba(var(--gradient-secondary), 0.7));
+  --gradient-80: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.8), rgba(var(--gradient-secondary), 0.8));
+
+  /* Tint variables */
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+
+  /* Other variables */
+  --window-padding: 10px;
+  --window-roundness: 10px;
+  --scrollbar-colour: rgba(171,35,51,.5);
+  --link-colour: #c6586b;
+  --show-gift-gif-buttons: none;
+
+  /* Settings Icons */
+  --settingsiconssize: 18px;
+  --settingsiconsgap: 14px;
+
+  /* Fonts */
+  --font: 'Quicksand';
+  
+  /* Cooler Activity Status */
+  --text-color: #fff;
+  /*--activity-bg: #627ee4;	Disabled because I'm using --gradient in my css*/
+  --spotify-bg: rgba(30, 215, 96, .6);
+  --twitch-bg: rgba(145, 71, 254, .6);
+  --bot-bg: #546cc4;
+  
+  /* Embed Redesign */
+  --embed-border-radius: 8px;
+  --embed-line-width: 256px;
+  
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+/*Resizes code editors*/
+.floating-addon-window, #floating-editor-window{
+  min-height: 0 !important;
+  min-width: 0 !important;
+  max-height: 1050px !important;
+  max-width: 1680px !important;
+}
+
+/*Adds a darker blur to the top toolbar*/
+.typeWindows-2-g3UY.withFrame-2dL45i:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: -4px;
+  height: 22px;
+  background-color: rgba(0, 0, 0, .46);
+}
+
+/*Custom top left watermark*/
+.typeWindows-2-g3UY{position: relative;}
+.wordmark-2u86JB{
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  height: calc(100% + 4px);
+  top: -4px;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Discord';
+}
+.wordmark-2u86JB > svg{display: none;}
+.wordmark-2u86JB:after{
+  content: 'BetterDiscord: Frosted Glass';
+  color: transparent;
+  background: linear-gradient(320deg, #88909d, #c66073);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: none !important;
+}
+
+/*Offline Revamp*/
+.tipTitle-3FYEQp{
+  content:"";  
+  font-size: 0px;
+}
+.tipTitle-3FYEQp::before{
+  content:"No Connection";  
+  font-size: 12px;
+}
+.tip-1AwED_{
+  content:""; 
+  font-size: 0px;
+}
+.tip-1AwED_::before{
+  content: "You're Offline"; 
+  font-size: 16px;
+}
+.problems-CvGwpb.slideIn-VAD-dp{display:none;}
+.container-2RRFHK.fixClipping-3GOd_d{
+  background:rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(5px);
+}
+
+/*Fixes some emoji issues*/
+img.emote{ 
+  text-indent: 0;
+  white-space: nowrap;
+  width: auto;
+  position: relative;
+  top: 0.25ex;
+}
+
+/*Embed Redesign
+.embed-hKpSrO{border-radius: var(--embed-border-radius);}
+.embed-hKpSrO code{background: var(--background-secondary);}
+.embedFull-1HGV2S{
+  border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
+  background: var(--background-secondary);
+}
+.grid-1aWVsE{
+  margin-left: calc( -1 * var(--embed-line-width));
+  z-index: 1;
+}
+.embedFull-1HGV2S:after, .embedFull-1HGV2S:before{
+  content: "";
+  height: 100%;
+  width: var(--embed-line-width);
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--embed-line-width));
+}
+.embedFull-1HGV2S:after{background: linear-gradient(to right, transparent, var(--background-secondary));}
+.embedFull-1HGV2S:before{background: var(--background-secondary); opacity: .8;}*/

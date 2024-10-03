@@ -1,0 +1,161 @@
+/**
+ * @name Black Swan
+ * @author Gibbu#1211. Edits by identity7#6886
+ * @version 1.5
+ * @description Edit of Frosted Glass. Some CSS here will only work on specific screen sizes.
+ * @invite ZHthyCw
+ * @authorId 174868361040232448
+ * @source https://github.com/DiscordStyles/FrostedGlass
+ * @website https://betterdiscord.app/theme/Frosted%20Glass
+*/
+
+@import url(https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css);
+@import url(https://monstrousdev.github.io/themes/addons/user-tags.css); /*USRBG*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/UsrBgs.css); /*USRBG*/
+@import url(https://nyri4.github.io/Discolored/main.css); /*Discolored*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css); /*SettingsIcons*/
+@import url(https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css); /*ChannelIcons*/
+
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css); /*Discord font*/
+@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap); /*Quicksand font*/
+@import url(https://allfont.net/allfont.css?fonts=lucida-console); /*Codeblock font import*/
+
+@import url(https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css); /*Old titlebar*/
+@import url(https://nyri4.github.io/Comfy/betterdiscord/better-spotify.css); /*Better SpotifyControls seek bar*/
+
+:root {
+  /* Background image variables */
+  --background-image: url('https://cdn.discordapp.com/attachments/854499134873927740/908073772937007194/wlopBlackSwan2NoWM.jpg'); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image-blur: 2.5px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 2.5pxpx */
+  --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
+  --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Popout & Modal variables */
+  --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --popout-modal-blur: 2px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 2px */
+  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
+  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Home image variables */
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'); /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --home-button-size: cover; /* Size of the home button image | DEFAUT: cover */
+  --home-button-position: center; /* Position of home button image | DEAFULT: center */
+
+  /* Brightness variables */
+  --serverlist-brightness: 0.55; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.55 */
+  --left-brightness: 0.55; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.55 */
+  --middle-brightness: 0.4; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.4 */
+  --right-brightness: 0.1; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.1 */
+  --popout-modal-brightness: 0.75; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+
+  /* Gradient variables */
+  --gradient-primary: 28, 64, 98; /* DEFAULT: 28, 64, 98 */
+  --gradient-secondary: 15, 23, 34; /* DEFAULT: 15, 23, 34 */
+  --gradient-direction: 320deg; /* DEFAULT: 320deg */
+
+  /* Gradient variables v2: Electric Boogaloo*/
+  --gradient-5: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.05), rgba(var(--gradient-secondary), 0.05));
+  --gradient-10: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.1), rgba(var(--gradient-secondary), 0.1));
+  --gradient-30: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.3), rgba(var(--gradient-secondary), 0.3));
+  --gradient-40: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.4), rgba(var(--gradient-secondary), 0.4));
+  --gradient-60: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.6), rgba(var(--gradient-secondary), 0.6));
+  --gradient-70: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.7), rgba(var(--gradient-secondary), 0.7));
+  --gradient-80: linear-gradient(var(--gradient-direction), rgba(var(--gradient-primary), 0.8), rgba(var(--gradient-secondary), 0.8));
+
+  /* Tint variables */
+  --tint-colour: 255,51,159; /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+
+  /* Other variables */
+  --window-padding: 20px; /* Spacing around the Discord window | DEFAULT: 20px */
+  --window-roundness: 15px; /* Roundness of Discord | DEFAULT: 15px */
+  --scrollbar-colour: rgba(255,255,255,0.05); /* DEFAULT: rgba(255,255,255,0.05) */
+  --link-colour: #6493cc; /* DEFAULT: #6493cc */
+
+  /*
+    Visit https://fonts.google.com and select one to your liking.
+    Now just follow this tutorial: https://imgur.com/a/CNbw7xC
+  */
+  --font: 'Quicksand';
+
+  /* Cooler Activity Status */
+  --text-color: #fff;
+  /*--activity-bg: #627ee4;	Disabled because I'm using --gradient in my css*/
+  --spotify-bg: rgba(30, 215, 96, .6);
+  --twitch-bg: rgba(145, 71, 254, .6);
+  --bot-bg: #546cc4;
+  
+  /* Embed Redesign */
+  --embed-border-radius: 8px;
+  --embed-line-width: 256px;
+
+  /* Settings Icons */
+  --settingsiconssize: 18px;
+  --settingsiconsgap: 14px;
+
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+/*Resizes code editors*/
+.floating-addon-window, #floating-editor-window{
+  min-height: 0px !important;
+  min-width: 0px !important;
+  max-height: 1050px !important;
+  max-width: 1680px !important;
+}
+
+/*Setting the codeblock font*/
+.markup-eYLPri code.inline{
+  font-family: 'Lucida Console';
+}
+.markup-eYLPri pre{
+  font-family: 'Lucida Console';
+}
+code{
+  font-family: 'Lucida Console';
+  font-size: 14px !important;
+}
+
+/*Offline Revamp*/
+.tipTitle-3FYEQp{
+  content:"";  
+  font-size: 0px;
+}
+.tipTitle-3FYEQp::before{
+  content:"No Connection";  
+  font-size: 12px;
+}
+.tip-1AwED_{
+  content:""; 
+  font-size: 0px;
+}
+.tip-1AwED_::before{
+  content: "You're Offline"; 
+  font-size: 16px;
+}
+.problems-CvGwpb.slideIn-VAD-dp{display:none;}
+.container-2RRFHK.fixClipping-3GOd_d{
+  background:rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(5px);
+}
+
+/*Fixes some emoji issues*/
+img.emote{ 
+  text-indent: 0;
+  white-space: nowrap;
+  width: auto;
+  position: relative;
+  top: 0.25ex;
+}
+
+/*Adds a text shadow to make it pop a bit*/
+body, button, input, select, textarea, ::placeholder{
+  text-shadow: 1px 1px 3px black;
+}
+
+/*Changes the font that won't change*/
+html:root{
+  --font-display: var(--font);
+}
+
